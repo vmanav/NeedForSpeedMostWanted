@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<garage>
+    <car>
+        <name>M3 GTR</name>
+        <brand>BMW</brand>
+        <topSpeed>295</topSpeed>
+        <acceleration>5</acceleration>
+        <handling>4</handling>
+        <braking>4</braking>
+        <image>bmw_m3_gtr.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/BMW_M3_GTR_(E46)</url>
+        <price>NA</price>
+        <engine>4.0L V8</engine>
+        <blacklist>1</blacklist>
+        <blacklistRacer>Razor</blacklistRacer>
+    </car>
+    <car>
+        <name>Carrera GT</name>
+        <brand>Porsche</brand>
+        <topSpeed>330</topSpeed>
+        <acceleration>5</acceleration>
+        <handling>4</handling>
+        <braking>4</braking>
+        <image>porsche_carrera_gt.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Porsche_Carrera_GT</url>
+        <price>$440,000</price>
+        <engine>5.7L V10</engine>
+        <blacklist>N/A</blacklist>
+        <blacklistRacer>N/A</blacklistRacer>
+    </car>
+    <car>
+        <name>Gallardo</name>
+        <brand>Lamborghini</brand>
+        <topSpeed>309</topSpeed>
+        <acceleration>4</acceleration>
+        <handling>5</handling>
+        <braking>4</braking>
+        <image>lamborghini_gallardo.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Lamborghini_Gallardo</url>
+        <price>$120,000</price>
+        <engine>5.0L V10</engine>
+        <blacklist>6</blacklist>
+        <blacklistRacer>Ming</blacklistRacer>
+    </car>
+    <car>
+        <name>Murcielago</name>
+        <brand>Lamborghini</brand>
+        <topSpeed>330</topSpeed>
+        <acceleration>4</acceleration>
+        <handling>4</handling>
+        <braking>4</braking>
+        <image>lamborghini_murcielago.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Lamborghini_Murciélago</url>
+        <price>$265,000</price>
+        <engine>6.2L V12</engine>
+        <blacklist>4</blacklist>
+        <blacklistRacer>JV</blacklistRacer>
+    </car>
+    <car>
+        <name>SLR McLaren</name>
+        <brand>Mercedes-Benz</brand>
+        <topSpeed>334</topSpeed>
+        <acceleration>5</acceleration>
+        <handling>4</handling>
+        <braking>4</braking>
+        <image>mercedes_slr_mclaren.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Mercedes-Benz_SLR_McLaren</url>
+        <price>$450,000</price>
+        <engine>5.4L V8 Supercharged</engine>
+        <blacklist>3</blacklist>
+        <blacklistRacer>Ronnie</blacklistRacer>
+    </car>
+    <car>
+        <name>Elise</name>
+        <brand>Lotus</brand>
+        <topSpeed>241</topSpeed>
+        <acceleration>3</acceleration>
+        <handling>5</handling>
+        <braking>4</braking>
+        <image>lotus_elise.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Lotus_Elise</url>
+        <price>$48,000</price>
+        <engine>1.8L I4</engine>
+        <blacklist>8</blacklist>
+        <blacklistRacer>Jewels</blacklistRacer>
+    </car>
+    <car>
+        <name>GT</name>
+        <brand>Ford</brand>
+        <topSpeed>330</topSpeed>
+        <acceleration>4</acceleration>
+        <handling>4</handling>
+        <braking>4</braking>
+        <image>ford_gt.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Ford_GT</url>
+        <price>$270,000</price>
+        <engine>5.4L V8</engine>
+        <blacklist>4</blacklist>
+        <blacklistRacer>JV</blacklistRacer>
+    </car>
+    <car>
+        <name>Corvette C6</name>
+        <brand>Chevrolet</brand>
+        <topSpeed>300</topSpeed>
+        <acceleration>4</acceleration>
+        <handling>4</handling>
+        <braking>4</braking>
+        <image>chevrolet_corvette_c6.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Chevrolet_Corvette_C6</url>
+        <price>$80,000</price>
+        <engine>6.0L V8</engine>
+        <blacklist>5</blacklist>
+        <blacklistRacer>Webster</blacklistRacer>
+    </car>
+    <car>
+        <name>DB9</name>
+        <brand>Aston Martin</brand>
+        <topSpeed>306</topSpeed>
+        <acceleration>4</acceleration>
+        <handling>4</handling>
+        <braking>4</braking>
+        <image>aston_martin_db9.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Aston_Martin_DB9</url>
+        <price>$90,000</price>
+        <engine>6.0L V12</engine>
+        <blacklist>7</blacklist>
+        <blacklistRacer>Kaze</blacklistRacer>
+    </car>
+    <car>
+        <name>Lancer Evolution VIII</name>
+        <brand>Mitsubishi</brand>
+        <topSpeed>248</topSpeed>
+        <acceleration>3</acceleration>
+        <handling>4</handling>
+        <braking>4</braking>
+        <image>mitsubishi_lancer_evo_viii.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Mitsubishi_Lancer_Evolution_VIII</url>
+        <price>$30,000</price>
+        <engine>2.0L I4 Turbo</engine>
+        <blacklist>N/A</blacklist>
+        <blacklistRacer>N/A</blacklistRacer>
+    </car>
+    <car>
+        <name>Impreza WRX STI</name>
+        <brand>Subaru</brand>
+        <topSpeed>250</topSpeed>
+        <acceleration>3</acceleration>
+        <handling>4</handling>
+        <braking>4</braking>
+        <image>subaru_impreza_wrx_sti.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Subaru_Impreza_WRX_STI</url>
+        <price>$35,000</price>
+        <engine>2.5L F4 Turbo</engine>
+        <blacklist>9</blacklist>
+        <blacklistRacer>Earl</blacklistRacer>
+    </car>
+    <car>
+        <name>RX-8</name>
+        <brand>Mazda</brand>
+        <topSpeed>238</topSpeed>
+        <acceleration>3</acceleration>
+        <handling>4</handling>
+        <braking>4</braking>
+        <image>mazda_rx8.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Mazda_RX-8</url>
+        <price>$32,000</price>
+        <engine>1.3L R2</engine>
+        <blacklist>12</blacklist>
+        <blacklistRacer>Izzy</blacklistRacer>
+    </car>
+    <car>
+        <name>Supra</name>
+        <brand>Toyota</brand>
+        <topSpeed>250</topSpeed>
+        <acceleration>3</acceleration>
+        <handling>4</handling>
+        <braking>4</braking>
+        <image>toyota_supra.jpeg</image>
+        <url>https://nfs.fandom.com/wiki/Toyota_Supra</url>
+        <price>$40,000</price>
+        <engine>3.0L I6 Twin-Turbo</engine>
+        <blacklist>13</blacklist>
+        <blacklistRacer>Vic</blacklistRacer>
+    </car>
+</garage>
