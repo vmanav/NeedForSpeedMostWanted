@@ -129,7 +129,6 @@ class GarageTableViewController: UITableViewController {
             destination.car2 = selectedCars[1]
         }
     }
-
 }
 
 extension GarageTableViewController: UISearchBarDelegate {
@@ -139,8 +138,12 @@ extension GarageTableViewController: UISearchBarDelegate {
             filteredCars = []
         } else {
             isSearching = true
-            filteredCars = garageData.garage.filter { $0.name.lowercased().contains(searchText.lowercased()) }
-            filteredCars += garageData.garage.filter { $0.brand.lowercased().contains(searchText.lowercased()) }
+            filteredCars = Array(Dictionary(uniqueKeysWithValues:
+                garageData.garage.filter { car in
+                    car.name.lowercased().contains(searchText.lowercased()) ||
+                    car.brand.lowercased().contains(searchText.lowercased())
+                }.map { ($0.name, $0) } // Use car name as key
+            ).values)
         }
         tableView.reloadData()
     }
