@@ -15,7 +15,6 @@ class XMLParsing:NSObject, XMLParserDelegate{
     }
     
     //MARK: Vars for parsing
-    //temp var for person data
     var pName, pBrand, pImage, pUrl, pprice,
         pengine, pblacklist, pblacklistRacer: String!
     
@@ -75,7 +74,6 @@ class XMLParsing:NSObject, XMLParserDelegate{
             passElement = -1
         }
         
-        //check if </person>
         if(elementName == "car"){
             carData = Car(
                 name: pName,
@@ -96,15 +94,12 @@ class XMLParsing:NSObject, XMLParserDelegate{
     }
     
     func parsing(){
-        // get the xml file url
         let bundleUrl = Bundle.main.bundleURL
         let fileUrl = URL(string: self.fileName, relativeTo: bundleUrl)
         
-        //make the parser and delegate it
         parser = XMLParser(contentsOf: fileUrl!)
         parser.delegate = self
         
-        //parse
         parser.parse()
     }
 }

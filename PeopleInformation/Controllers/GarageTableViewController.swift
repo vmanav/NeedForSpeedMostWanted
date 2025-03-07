@@ -25,7 +25,6 @@ class GarageTableViewController: UITableViewController {
         super.viewDidLoad()
         self.title = "Garage"
         
-        // Set Background Image
         let backgroundImage = UIImageView(image: UIImage(named: "bg1"))
         backgroundImage.contentMode = .scaleAspectFill
         backgroundImage.frame = self.tableView.bounds
@@ -43,7 +42,6 @@ class GarageTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return isSearching ? filteredCars.count : garageData.count()
     }
 
@@ -51,7 +49,6 @@ class GarageTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GarageTableViewCell", for: indexPath) as! GarageTableViewCell
 
-        // Configure the cell...
         let carData = isSearching ? filteredCars[indexPath.row] : garageData.getCar(index: indexPath.row)
         cell.carBrandLabel?.text = carData.brand
         cell.carNameLabel?.text = carData.name
@@ -66,7 +63,7 @@ class GarageTableViewController: UITableViewController {
                 if self.selectedCars.count < 2 {
                     self.selectedCars.append(carData)
                 } else {
-                    cell.toggleSwitch.setOn(false, animated: true) // Can only select 2 cars at max
+                    cell.toggleSwitch.setOn(false, animated: true)
                 }
             } else {
                 self.selectedCars.removeAll { $0.name == carData.name }

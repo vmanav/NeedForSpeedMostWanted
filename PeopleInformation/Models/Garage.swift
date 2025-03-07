@@ -16,12 +16,9 @@ class Garage{
     }
     
     init(xmlFile: String){
-        //make xmlpoepleParser and start parsing
         let dataParser = XMLParsing(fileName: xmlFile)
-        
         dataParser.parsing()
-        
-        //get the data from file
+
         self.garage = dataParser.garageData
     }
 

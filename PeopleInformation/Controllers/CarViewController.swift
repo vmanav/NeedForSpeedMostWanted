@@ -38,7 +38,6 @@ class CarViewController: UIViewController {
     }
     
     // MARK: - Navigation
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue1"{
             let destinationController = segue.destination as! DetailsViewController
