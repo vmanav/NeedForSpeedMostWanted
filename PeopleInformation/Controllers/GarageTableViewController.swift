@@ -10,17 +10,20 @@ class GarageTableViewController: UITableViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
+    @IBAction func CompareAction(_ sender: UIBarButtonItem) {
+            print("kahdkahksjd")
+    }
     
     //MARK: - model data
     var garageData : Garage!
     var filteredCars: [Car] = []
+    var selectedCars: [Car] = []
     var isSearching = false
     
     override func viewDidLoad() {
         searchBar.delegate = self
         super.viewDidLoad()
         self.title = "Garage"
-        
         
         // Set Background Image
         let backgroundImage = UIImageView(image: UIImage(named: "bg1"))
@@ -53,6 +56,24 @@ class GarageTableViewController: UITableViewController {
         cell.carBrandLabel?.text = carData.brand
         cell.carNameLabel?.text = carData.name
         cell.carImageView?.image = UIImage(named: carData.image)
+        
+        
+        cell.toggleSwitch.isOn = selectedCars.contains { $0.name == carData.name }
+        
+        // Switch Toggle Action
+        cell.switchAction = { isOn in
+            if isOn {
+                if self.selectedCars.count < 2 {
+                    self.selectedCars.append(carData)
+                } else {
+                    cell.toggleSwitch.setOn(false, animated: true) // Can only select 2 cars at max
+                }
+            } else {
+                self.selectedCars.removeAll { $0.name == carData.name }
+            }
+            
+            self.navigationItem.rightBarButtonItem?.isEnabled = self.selectedCars.count == 2
+        }
 
         return cell
     }
@@ -104,6 +125,11 @@ class GarageTableViewController: UITableViewController {
             let destination = segue.destination as! CarViewController
             destination.carData = carData
             
+        }
+        if segue.identifier == "seguec" {
+            let destination = segue.destination as! CarComparisonViewController
+            destination.car1 = selectedCars[0]
+            destination.car2 = selectedCars[1]
         }
     }
 

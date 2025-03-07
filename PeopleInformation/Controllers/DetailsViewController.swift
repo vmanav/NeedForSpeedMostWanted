@@ -16,9 +16,8 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var brakingLabel: UILabel!
     @IBOutlet weak var handlingLabel: UILabel!
     @IBOutlet weak var blacklistLabel: UILabel!
-    
-    var carData : Car!
 
+    var carData : Car!
 
     override func viewDidLoad() {
         super.viewDidLoad()
